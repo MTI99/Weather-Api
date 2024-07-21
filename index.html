@@ -1,0 +1,107 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link href="images/fav.icon" rel="icon" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="bg-dark">
+
+  <div class="container">
+    <section>
+      <div class="w-100 d-flex justify-content-between align-items-center">
+        <input type="search" id="searchCity" placeholder="Enter City Name..." class="search-form p-4 rounded-pill my-5 w-100">
+        <button type="submit" id="searchButton" class="btn btn-primary ms-2 px-5 py-3 rounded-pill">Search</button>
+    </div>
+
+      <div id="weather">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="c-weather col-md-8 row">
+              <aside class="c-weather__side col-md-5 d-flex flex-column w-100">
+                <figure class="c-weather__side-figure ">
+                  <img src="https://images.unsplash.com/photo-1559963110-71b394e7494d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80" class="c-weather__side-image">
+                  <div class="c-weather__side-gradient"></div>
+                </figure>
+                
+                <div class="c-weather__side-content">
+                  <div class="c-weather__side-date">
+                    <h2 class="c-weather__side-dayname">Wednesday</h2>
+                    <div class="c-weather__side-day">15 Nov 2023</div>
+                    <div class="c-weather__side-location">Palma, ES</div>
+                  </div>
+            
+                  <div class="c-wather__side-temperature">
+                    <h1 class="c-weather__side-temp">29°C</h1>
+                    <h3 class="c-weather__side-description">Sunny</h3>
+                  </div>
+                </div>
+              </aside>
+              
+              <div class="c-weather__infos col-md-7 d-flex flex-column justify-content-between w-75 m-auto">
+                <ul class="c-weather__today-list">
+                  <li class="c-weather__today-item d-flex justify-content-between">
+                    <div class="c-weather__today-item-title">Precipitation</div>
+                    <div class="c-weather__today-item-value">0%            </li>
+                  
+                  <li class="c-weather__today-item d-flex justify-content-between">
+                    <div class="c-weather__today-item-title">Humidity</div>
+                    <div class="c-weather__today-item-value">34%</div>
+                  </li>
+                  
+                  <li class="c-weather__today-item d-flex justify-content-between">
+                    <div class="c-weather__today-item-title">Wind</div>
+                    <div class="c-weather__today-item-value">0 km/h</div>
+                  </li>
+                </ul>
+                
+                <ul class="c-weather__weeklist d-flex">
+                  <li class="c-weather__weeklist-item flex-fill text-center ps-0 py-4 is-active ">
+                    <div class="c-weather__weeklist-item-dayname">Wed</div>
+                    <div class="c-weather__weeklist-item-temperature">29°C</div>
+                  </li>
+                  
+                  <li class="c-weather__weeklist-item flex-fill text-center py-4">
+                    <div class="c-weather__weeklist-item-dayname">Thu</div>
+                    <div class="c-weather__weeklist-item-temperature">24°C</div>
+                  </li>
+                  
+                  <li class="c-weather__weeklist-item flex-fill text-center py-4">
+                    <div class="c-weather__weeklist-item-dayname">Fri</div>
+                    <div class="c-weather__weeklist-item-temperature">24°C</div>
+                  </li>
+                  
+                </ul>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+  </div>
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap Script -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome Script -->
+    <script src="js/all.min.js"></script>
+    <!-- Main Script -->
+    <script src="js/script.js" type="module"></script>
+  </body>
+</html>
